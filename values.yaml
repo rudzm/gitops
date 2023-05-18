@@ -1,0 +1,40 @@
+app-deployment:
+  replicaCount: 1
+
+  image:
+    repository: nginx
+    pullPolicy: Always
+    tag: "latest"
+
+  imagePullSecrets: []
+  nameOverride: "mynginx"
+  fullnameOverride: ""
+
+  podAnnotations: {}
+
+  service:
+    type: NodePort
+    port: 80
+
+  ingress:
+    enabled: true
+    className: ""
+    annotations: {}
+
+    hosts:
+      - host: mynginx.plenti.network
+        paths:
+          - path: /
+            pathType: Exact
+    tls: []
+    #  - secretName: chart-example-tls
+    #    hosts:
+    #      - chart-example.local
+
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
