@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: supply
-    name: in-cluster
+    name: plenti-dev
   project: default
   source:
     path: apps/supply/dev
