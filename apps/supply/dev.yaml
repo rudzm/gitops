@@ -14,3 +14,9 @@ spec:
     path: apps/supply/dev
     repoURL: https://github.com/rudzm/gitops
     targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
