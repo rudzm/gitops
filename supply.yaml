@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: supply
-    url: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: apps/supply

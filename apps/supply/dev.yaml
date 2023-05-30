@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: supply
-    name: plenti-dev
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: apps/supply/dev
