@@ -8,12 +8,15 @@ metadata:
 spec:
   destination:
     namespace: supply
-    name: plenti-dev
+    url: https://kubernetes.default.svc
   project: default
   source:
     path: apps/supply
     repoURL: https://github.com/rudzm/gitops
     targetRevision: HEAD
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
