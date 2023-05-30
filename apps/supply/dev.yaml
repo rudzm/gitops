@@ -6,6 +6,8 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
+  ignoreDifferences:
+  - kind: cilium.io/v2
   destination:
     namespace: supply
     server: https://kubernetes.default.svc
