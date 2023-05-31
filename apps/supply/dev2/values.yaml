@@ -27,7 +27,11 @@ app-deployment:
           - path: /
             pathType: Exact
     tls: []
-    
+  
+  iap:
+    enabled: true
+    secretName: supply
+
   resources:
     limits:
       cpu: 250m
