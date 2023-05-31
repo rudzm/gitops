@@ -22,7 +22,7 @@ app-deployment:
     annotations: {}
 
     hosts:
-      - host: supply.plenti.network
+      - host: supply2.plenti.network
         paths:
           - path: /
             pathType: Exact
