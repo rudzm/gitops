@@ -7,8 +7,7 @@ app-deployment:
     tag: "latest"
 
   imagePullSecrets: []
-  nameOverride: ""
-  fullnameOverride: "supply"
+  fullnameOverride: "supply2"
 
   podAnnotations: {}
 

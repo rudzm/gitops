@@ -7,8 +7,7 @@ app-deployment:
     tag: "latest"
 
   imagePullSecrets: []
-  nameOverride: "mynginx"
-  fullnameOverride: ""
+  fullnameOverride: "supply"
 
   podAnnotations: {}
 
@@ -27,7 +26,11 @@ app-deployment:
           - path: /
             pathType: Exact
     tls: []
-    
+  
+  iap:
+    enabled: true
+    secretName: supply
+
   resources:
     limits:
       cpu: 250m
