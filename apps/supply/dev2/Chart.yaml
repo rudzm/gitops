@@ -25,4 +25,4 @@ appVersion: "1.0"
 dependencies:
 - name: app-deployment
   repository: https://raw.githubusercontent.com/rudzm/helm-charts-repo/main/
-  version: 0.1.0
+  version: 0.2.0
