@@ -7,8 +7,8 @@ app-deployment:
     tag: "latest"
 
   imagePullSecrets: []
-  nameOverride: "mynginx"
-  fullnameOverride: ""
+  nameOverride: ""
+  fullnameOverride: "supply"
 
   podAnnotations: {}
 
